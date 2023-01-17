@@ -27,6 +27,11 @@ jobs:
 
       - name: Check out repository code
         uses: actions/checkout@v3
+        
+      - name: Pull latest track
+        uses: ./.github/actions/track-pull
+        with:
+          path: ${{ env.TRACK_DIR }}/${{ inputs.slug }}
 
       - name: Get Track ID
         run: echo "ID=$(TRACKNAME=${{ inputs.slug }} yq eval '.tracks[] | select(.slug == env(TRACKNAME) ) | .id' instruqt-tracks/track-slugs.yml)" >> $GITHUB_ENV
