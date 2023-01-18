@@ -2,7 +2,7 @@ slug: git-test
 id: iu6vxsbvmxui
 title: git-test
 teaser: Get started quickly with a single container-based sandbox host
-description: Get started quickly with a container-based sandbox host.
+description: Get started quickly with a container-based sandbox host.test
 icon: https://cdn.instruqt.com/assets/templates/ubuntu.png
 tags: []
 owner: instruqt-demos
