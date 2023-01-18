@@ -1,14 +1,14 @@
-slug: container
-id: 
-title: Sandbox container
+slug: container-dev
+id: 37nrnqgzaomf
+title: DEV - Sandbox container
 teaser: Get started quickly with a single container-based sandbox host
 description: Get started quickly with a container-based sandbox host. Choose a container
   when you need a fast, lightweight Linux system.
 icon: https://cdn.instruqt.com/assets/templates/ubuntu.png
 tags:
-- prod
+- dev
 owner: instruqt-demos
 developers:
 - sohail.shaik@xebia.com
-maintenance: false
-checksum: "18095374967374687345"
+maintenance: true
+checksum: "1026494114306387365"
