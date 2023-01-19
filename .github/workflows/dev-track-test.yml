@@ -68,24 +68,24 @@ jobs:
       - name: Convert to DEV version 
         uses: ./.github/actions/track-dev
         with:
-          path: ${{ env.TRACK_DIR }}/${{ matrix.tracks.slug }}
+          path: ${{ env.TRACK_DIR }}/${{ inputs.slug }}
 
       # Remaining steps will skip any tracks that do not have existing DEV variants on Instruqt
       - name: Pull track from instruqt
         id: track-pull
         uses: ./.github/actions/track-pull
         with:
-          path: ${{ env.TRACK_DIR }}/${{ matrix.tracks.slug }}
+          path: ${{ env.TRACK_DIR }}/${{ inputs.slug }}
         continue-on-error: true
         
       - name: Track Validate
         uses: ./.github/actions/track-validate
         with:
-          path: ${{ env.TRACK_DIR }}/${{ matrix.tracks.slug }}
+          path: ${{ env.TRACK_DIR }}/${{ inputs.slug }}
         if: steps.track-pull.outcome == 'success'
       
       - name: Track Test
         uses: ./.github/actions/track-test
         with:
-          path: ${{ env.TRACK_DIR }}/${{ matrix.tracks.slug }}
+          path: ${{ env.TRACK_DIR }}/${{ inputs.slug }}
         if: steps.track-pull.outcome == 'success'
