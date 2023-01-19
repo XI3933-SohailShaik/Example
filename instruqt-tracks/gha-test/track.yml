@@ -1,12 +1,14 @@
-slug: gha-test
-id: nyovr1rzekjz
-title: gha-test
+slug: gha-test-dev
+id: aofvypnsqcam
+title: DEV - gha-test
 teaser: Get started quickly with a single container-based sandbox host
 description: Get started quickly with a container-based sandbox host. Choose a container
   when you need a fast, lightweight Linux system.
 icon: https://cdn.instruqt.com/assets/templates/ubuntu.png
-tags: []
+tags:
+- dev
 owner: instruqt-demos
 developers:
 - sohail.shaik@xebia.com
-checksum: "8417315415342744559"
+maintenance: true
+checksum: "11371878217037825131"
