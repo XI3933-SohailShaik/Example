@@ -22,7 +22,6 @@ on:
 jobs:
   PromoteTrack:
     runs-on: ubuntu-latest
-    permissions: write-all
     steps:
 
       - name: Check out repository code
