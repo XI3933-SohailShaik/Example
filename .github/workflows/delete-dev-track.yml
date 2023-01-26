@@ -38,7 +38,7 @@ jobs:
       - name: Delete dev track
         uses: ./.github/actions/track-delete
         with:
-          path: ${{ env.TRACK_DIR }}/${{ DEV-inputs.slug }}
+          path: ${{ env.TRACK_DIR }}/${{ inputs.slug }}
           
       - name: Pull latest track
         uses: ./.github/actions/track-pull
